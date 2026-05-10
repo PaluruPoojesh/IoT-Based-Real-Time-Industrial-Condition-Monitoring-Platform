@@ -1,3 +1,4 @@
+---
 ![Project Banner](project_banner.png)
 ---
 <h1 align="center">🏭 Industrial Condition Monitoring System</h1>
