@@ -1,7 +1,5 @@
-<p align="center">
-  <img src="project_banner.png" alt="Project Banner" width="100%">
-</p>
-
+![Project Banner](project_banner.png)
+---
 <h1 align="center">🏭 Industrial Condition Monitoring System</h1>
 
 <h3 align="center">
