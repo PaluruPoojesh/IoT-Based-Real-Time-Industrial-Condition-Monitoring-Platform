@@ -1,35 +1,46 @@
-# 🏭 Industrial Condition Monitoring System  
-## Intelligent IoT-Based Real-Time Industrial Environment & Equipment Monitoring Platform
+<p align="center">
+  <img src="project_banner.png" width="100%">
+</p>
 
-![Project Banner](Project%20Banner.png)
+<h1 align="center">🏭 Industrial Condition Monitoring System</h1>
 
-![Platform](https://img.shields.io/badge/Platform-IoT-blue)
-![Arduino](https://img.shields.io/badge/Arduino-UNO-green)
-![ESP8266](https://img.shields.io/badge/ESP8266-WiFi-orange)
-![Monitoring](https://img.shields.io/badge/Industrial-Monitoring-red)
-![Status](https://img.shields.io/badge/Status-Active-success)
-![License](https://img.shields.io/badge/License-Educational-yellow)
+<h3 align="center">
+IoT-Based Real-Time Industrial Environment & Equipment Monitoring Platform
+</h3>
+
+<p align="center">
+Advanced Embedded IoT Monitoring System for Industrial Automation, Environmental Monitoring, Wireless Data Acquisition, and Live Dashboard Analytics
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Platform-IoT-blue">
+<img src="https://img.shields.io/badge/Arduino-UNO-green">
+<img src="https://img.shields.io/badge/ESP8266-WiFi-orange">
+<img src="https://img.shields.io/badge/Monitoring-Industrial-red">
+<img src="https://img.shields.io/badge/Status-Active-success">
+<img src="https://img.shields.io/badge/License-Educational-yellow">
+</p>
 
 ---
 
 # 📌 Introduction
 
-The **Industrial Condition Monitoring System** is an advanced IoT-enabled industrial monitoring platform designed to acquire, process, transmit, and visualize real-time industrial environmental and operational parameters.
+The **Industrial Condition Monitoring System** is an advanced IoT-enabled industrial monitoring platform developed for intelligent real-time monitoring of industrial environmental and operational parameters.
 
-This project integrates multiple industrial sensors with embedded hardware and IoT communication technologies to provide continuous monitoring of industrial conditions through a modern real-time dashboard.
+The system integrates embedded hardware, multi-sensor acquisition, wireless IoT communication, and live dashboard analytics to provide continuous industrial condition monitoring and visualization.
 
-The system is capable of monitoring:
+This platform is capable of monitoring:
 
-- 🌡 Temperature
-- 💧 Humidity
-- 🌫 Air Quality Index (AQI)
-- 📈 Atmospheric Pressure
-- 🌧 Rain Detection
-- 🌪 Wind Speed
+- Temperature
+- Humidity
+- Air Quality Index (AQI)
+- Atmospheric Pressure
+- Rain Detection
+- Wind Speed
 
-The collected sensor data is processed using **Arduino UNO** and transmitted wirelessly through the **ESP8266 Wi-Fi module** to a web-based industrial dashboard for real-time visualization and analysis.
+Sensor data is acquired using **Arduino UNO** and transmitted wirelessly through the **ESP8266 Wi-Fi module** to a modern real-time industrial monitoring dashboard.
 
-This platform demonstrates practical implementation of:
+The project demonstrates practical implementation of:
 
 - Industrial IoT
 - Embedded Systems
@@ -37,45 +48,32 @@ This platform demonstrates practical implementation of:
 - Wireless Communication
 - Real-Time Monitoring
 - Industrial Automation Concepts
+- Environmental Monitoring Systems
 
 ---
 
 # 🚀 Key Features
 
-## ✅ Real-Time Industrial Monitoring
-Continuous acquisition and visualization of industrial environmental parameters.
-
-## ✅ IoT-Based Wireless Communication
-ESP8266 enables wireless data transmission and remote monitoring.
-
-## ✅ Multi-Sensor Integration
-Supports simultaneous monitoring from multiple industrial sensors.
-
-## ✅ Intelligent Dashboard Interface
-Modern dashboard featuring:
-- Real-time parameter cards
-- Live graphs
-- Equipment monitoring
-- Industrial status indicators
-- Alert monitoring panels
-
-## ✅ Embedded Monitoring Architecture
-Efficient sensor data acquisition and processing using Arduino UNO.
-
-## ✅ Real-Time Data Visualization
-Interactive graphical representation using Chart.js.
-
-## ✅ Modular & Scalable Design
-Expandable system architecture for future industrial automation integration.
-
-## ✅ Low-Cost Industrial Solution
-Affordable implementation suitable for academic, research, and industrial learning applications.
+- Real-Time Industrial Monitoring
+- IoT-Based Wireless Communication
+- Multi-Sensor Integration
+- Live Dashboard Analytics
+- Real-Time Graph Visualization
+- Environmental Monitoring
+- Industrial Status Monitoring
+- Equipment Monitoring Interface
+- Expandable Embedded Architecture
+- Industrial Data Acquisition
+- Smart Monitoring Dashboard
+- Wireless Sensor Communication
 
 ---
 
 # 🧠 System Architecture
 
-![System Block Diagram](Industrial%20monitoring%20block%20diagram.png)
+<p align="center">
+  <img src="Industrial%20monitoring%20block%20diagram.png" width="90%">
+</p>
 
 ```text
 Industrial Sensors
@@ -93,7 +91,9 @@ Real-Time Industrial Monitoring
 
 # 🔌 Practical Circuit Connection Diagram
 
-![Practical Circuit Connection](Practical%20circuit%20connections%20(2).png)
+<p align="center">
+  <img src="Practical%20circuit%20connections%20(2).png" width="90%">
+</p>
 
 ---
 
@@ -109,7 +109,7 @@ Real-Time Industrial Monitoring
 | Rain Sensor Module | Rain Detection |
 | Anemometer | Wind Speed Sensor |
 | Breadboard | Circuit Prototyping |
-| 5V Regulated Supply | Power Supply |
+| 5V Regulated Supply | System Power Supply |
 
 ---
 
@@ -120,18 +120,18 @@ Real-Time Industrial Monitoring
 | Arduino IDE | Embedded Programming |
 | HTML5 | Dashboard Structure |
 | CSS3 | Dashboard Styling |
-| JavaScript | Dynamic Interactivity |
-| Chart.js | Real-Time Graph Visualization |
+| JavaScript | Dynamic Dashboard Interaction |
+| Chart.js | Real-Time Data Visualization |
 
 ---
 
 # 📡 Sensors & Monitoring Parameters
 
-| Sensor | Parameter Monitored | Purpose |
+| Sensor | Parameter Monitored | Function |
 |---|---|---|
 | DHT22 | Temperature & Humidity | Environmental Monitoring |
 | BMP280 | Atmospheric Pressure | Pressure Analysis |
-| MQ135 | Air Quality Index | Gas & AQI Detection |
+| MQ135 | Air Quality Index | AQI & Gas Detection |
 | Rain Sensor | Rain Detection | Weather Monitoring |
 | Anemometer | Wind Speed | Air Flow Monitoring |
 | ESP8266 | Wireless Communication | IoT Connectivity |
@@ -140,84 +140,84 @@ Real-Time Industrial Monitoring
 
 # 🖥 Dashboard Output
 
-![Dashboard Output](output%20(2).png)
+<p align="center">
+  <img src="dashboard_output.png" width="95%">
+</p>
+
+---
+
+# 🎥 Project Demonstration
+
+<p align="center">
+  <video src="demo_video.mp4" width="90%" controls></video>
+</p>
 
 ---
 
 # ⚙ Working Principle
 
-1. Industrial sensors continuously collect environmental data.
-2. Arduino UNO processes the sensor readings.
-3. Sensor values are transmitted wirelessly using ESP8266.
-4. The web dashboard receives live industrial data.
-5. Real-time parameters are visualized through:
-   - Sensor cards
-   - Live charts
-   - Equipment status panels
-   - Monitoring sections
-6. Operators can remotely monitor industrial conditions in real time.
+1. Industrial sensors continuously collect environmental and operational data.
+2. Arduino UNO processes the acquired sensor values.
+3. ESP8266 transmits the processed data wirelessly.
+4. The dashboard receives live industrial data.
+5. Sensor values are visualized through:
+   - Real-time parameter cards
+   - Live graphical trends
+   - Equipment monitoring panels
+   - Industrial status sections
+6. Users can remotely monitor industrial conditions in real time.
 
 ---
 
 # 📊 Dashboard Functionalities
 
 ## ✔ Real-Time Sensor Monitoring
-Displays continuously updating sensor values.
+Displays continuously updating industrial sensor values.
 
-## ✔ Live Data Trend Visualization
-Graphical representation of parameter variations.
+## ✔ Live Data Visualization
+Real-time graphical representation of industrial parameter variations.
 
-## ✔ Equipment Monitoring Panel
+## ✔ Equipment Monitoring
 Displays operational status of industrial equipment.
 
-## ✔ Industrial Status Section
-Shows complete operational health of the monitoring system.
+## ✔ Industrial Status Interface
+Shows operational condition of the monitoring platform.
 
 ## ✔ Alert Monitoring
-Provides indication of abnormal industrial conditions.
+Supports abnormal condition indication and monitoring.
 
 ## ✔ Data Acquisition Monitoring
-Displays live communication and update intervals.
+Tracks communication and sensor update intervals.
 
 ---
 
 # 🌐 IoT Communication
 
-The project uses the ESP8266 Wi-Fi module for wireless communication between the embedded system and the web dashboard.
+The project uses the ESP8266 Wi-Fi module for wireless communication between the embedded monitoring system and the web dashboard.
 
-The IoT communication layer provides:
-- Wireless accessibility
-- Remote industrial monitoring
-- Real-time data transmission
+The IoT communication layer enables:
+
+- Real-time monitoring
+- Remote industrial access
+- Wireless sensor communication
+- Live dashboard updates
 - Expandable cloud integration capability
 
 ---
 
-# 📂 Project Structure
+# 📂 Repository Contents
 
 ```text
-Industrial-Condition-Monitoring-System/
-│
-├── Arduino_Code/
-│   └── industrial_monitoring.ino
-│
-├── Dashboard/
-│   └── index.html
-│
-├── Circuit_Diagrams/
-│   ├── circuit_connection.png
-│   ├── practical_connection.png
-│   └── block_diagram.png
-│
-├── Output/
-│   ├── dashboard_output.png
-│   └── output_video.mp4
-│
-├── Images/
-│   └── project_banner.png
-│
-├── README.md
-└── requirements.txt
+Circuit Connection.png
+Circuit.png
+Industrial monitoring block diagram.png
+Industrial-monitoring-Arduino-code.ino
+Practical circuit connections (2).png
+README.md
+dashboard_output.png
+demo_video.mp4
+index.html
+project_banner.png
 ```
 
 ---
@@ -229,7 +229,7 @@ Industrial-Condition-Monitoring-System/
 1. Connect all sensors according to the circuit diagram.
 2. Connect ESP8266 with Arduino UNO.
 3. Provide regulated 5V power supply.
-4. Verify all sensor connections.
+4. Verify all sensor connections carefully.
 
 ---
 
@@ -239,7 +239,7 @@ Industrial-Condition-Monitoring-System/
 2. Install required libraries
 3. Open Arduino code
 4. Select Arduino UNO board
-5. Upload the code
+5. Upload the code to Arduino
 
 ---
 
@@ -257,23 +257,24 @@ SoftwareSerial Library
 
 ## 🔹 Dashboard Setup
 
-1. Open project folder
+1. Open the project folder
 2. Run `index.html`
 3. Connect ESP8266 to the same network
-4. Start monitoring real-time industrial data
+4. Start monitoring industrial parameters in real time
 
 ---
 
 # 📈 Industrial Applications
 
-- Smart Factory Monitoring
+- Industrial Environment Monitoring
+- Smart Factory Systems
 - Industrial Automation
-- Environmental Monitoring
 - Predictive Maintenance
-- Safety Monitoring Systems
-- Industrial IoT Platforms
+- Environmental Monitoring
+- Industrial IoT Systems
+- Safety Monitoring
 - Smart Manufacturing
-- Process Monitoring Systems
+- Process Monitoring
 
 ---
 
@@ -285,8 +286,9 @@ SoftwareSerial Library
 - Sensor Interfacing
 - Real-Time Data Acquisition
 - Industrial Dashboard Development
-- Data Visualization
+- Environmental Monitoring
 - Industrial Automation Concepts
+- Data Visualization Systems
 
 ---
 
@@ -296,76 +298,61 @@ This project provides practical exposure to:
 
 - Industrial IoT Systems
 - Embedded Programming
-- Sensor Calibration
-- Real-Time Monitoring
-- Wireless Data Communication
-- Industrial Dashboard Design
+- Sensor Interfacing
+- Wireless Communication
+- Dashboard Development
 - Environmental Monitoring
+- Real-Time Monitoring Systems
 - Industrial Automation Fundamentals
 
 ---
 
 # 📈 Future Enhancements
 
-## ☁ Cloud Integration
-Cloud database storage and remote analytics.
-
-## 🤖 AI-Based Fault Detection
-Machine learning-based anomaly prediction system.
-
-## 📱 Mobile Application Support
-Android/iOS industrial monitoring app.
-
-## 🔔 Smart Alert System
-SMS, Email, and Push Notifications.
-
-## 📊 Advanced Analytics
-Industrial performance analytics dashboard.
-
-## 📡 MQTT Protocol Integration
-Advanced IoT communication support.
-
-## 🏭 PLC & SCADA Integration
-Industrial automation compatibility.
-
-## 🔐 Secure Remote Monitoring
-Authentication and encrypted communication.
-
-## 📁 Data Logging System
-Historical industrial data storage and analysis.
+- Cloud Integration
+- AI-Based Fault Detection
+- Mobile Application Support
+- MQTT Communication
+- PLC & SCADA Integration
+- Smart Alert System
+- Data Logging & Analytics
+- Predictive Maintenance Algorithms
+- Secure Remote Monitoring
 
 ---
 
 # 🛡 Advantages
 
 - Real-Time Monitoring
-- Wireless Communication
+- Wireless Data Communication
 - Low-Cost Implementation
 - Scalable Architecture
-- Easy Sensor Integration
-- Industrial Safety Support
-- Smart Data Visualization
-- Expandable IoT Platform
+- Multi-Sensor Support
+- Smart Industrial Monitoring
+- Easy System Expansion
+- Modern Dashboard Visualization
 
 ---
 
 # 🎯 Project Objectives
 
-- To develop an IoT-based industrial monitoring platform.
-- To monitor environmental parameters in real time.
-- To implement wireless industrial data acquisition.
-- To visualize industrial data using a modern dashboard.
-- To improve industrial monitoring efficiency.
-- To demonstrate practical Industrial IoT applications.
+- Develop an IoT-based industrial monitoring platform.
+- Monitor environmental parameters in real time.
+- Implement wireless industrial data acquisition.
+- Visualize industrial data through live dashboards.
+- Improve industrial monitoring efficiency.
+- Demonstrate Industrial IoT applications using embedded systems.
 
 ---
 
 # 👨‍💻 Developer
 
 ## Paluru Poojesh  
-### Electrical and Electronics Engineering (EEE)
+Electrical and Electronics Engineering (EEE)
 
 Industrial IoT & Smart Monitoring Research Project
+
+📧 Email: palurupoojesh@gmail.com
 
 ---
 
@@ -382,12 +369,5 @@ This project is developed for:
 # ⭐ GitHub Support
 
 If you found this project useful, consider giving this repository a ⭐ to support the project and future developments.
-
----
-
-# 📬 Contact
-
-For project discussions, improvements, or collaboration opportunities, feel free to connect.
-Email:palurupoojesh@gmail.com
 
 ---
