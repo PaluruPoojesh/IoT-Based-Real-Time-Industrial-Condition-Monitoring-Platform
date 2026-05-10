@@ -1,0 +1,353 @@
+<!--
+=========================================================
+INDUSTRIAL CONDITION MONITORING SYSTEM
+IoT Real-Time Monitoring Dashboard
+=========================================================
+Save as: index.html
+=========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Industrial Monitoring System</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:250px;
+    background:#071c4d;
+    color:white;
+    padding:20px;
+}
+
+.sidebar h2{
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.sidebar ul li:hover{
+    background:#0b4ddb;
+}
+
+/* MAIN CONTENT */
+
+.main{
+    flex:1;
+    padding:20px;
+}
+
+.header{
+    background:#071c4d;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 2px 8px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h3{
+    color:#0b4ddb;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.status{
+    color:green;
+    margin-top:10px;
+}
+
+/* GRAPH */
+
+.chart-box{
+    background:white;
+    margin-top:20px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* LOWER SECTION */
+
+.lower{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.box h3{
+    margin-bottom:15px;
+    color:#0b4ddb;
+}
+
+.device{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+}
+
+.green{
+    color:green;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h2>Monitoring System</h2>
+
+        <ul>
+            <li>Dashboard</li>
+            <li>Environment</li>
+            <li>Sensors</li>
+            <li>Alerts</li>
+            <li>Data Logs</li>
+            <li>Reports</li>
+            <li>Settings</li>
+        </ul>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main">
+
+        <div class="header">
+            <h1>INDUSTRIAL CONDITION MONITORING SYSTEM</h1>
+            <p>Real-Time IoT Based Monitoring Dashboard</p>
+        </div>
+
+        <!-- TOP CARDS -->
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>TEMPERATURE</h3>
+                <p id="temp">28.6°C</p>
+                <div class="status">Normal</div>
+            </div>
+
+            <div class="card">
+                <h3>PRESSURE</h3>
+                <p id="pressure">991 hPa</p>
+                <div class="status">Normal</div>
+            </div>
+
+            <div class="card">
+                <h3>AIR QUALITY</h3>
+                <p id="aqi">Good</p>
+                <div class="status">Good</div>
+            </div>
+
+            <div class="card">
+                <h3>HUMIDITY</h3>
+                <p id="humidity">53%</p>
+                <div class="status">Normal</div>
+            </div>
+
+            <div class="card">
+                <h3>NOISE</h3>
+                <p id="noise">45 dB</p>
+                <div class="status">Normal</div>
+            </div>
+
+        </div>
+
+        <!-- GRAPH -->
+
+        <div class="chart-box">
+
+            <h3>LIVE DATA TRENDS</h3>
+
+            <canvas id="myChart"></canvas>
+
+        </div>
+
+        <!-- LOWER SECTION -->
+
+        <div class="lower">
+
+            <div class="box">
+
+                <h3>INDUSTRIAL STATUS</h3>
+
+                <p class="green">
+                    ✔ All Systems Operational
+                </p>
+
+                <br>
+
+                <p>No active alerts</p>
+
+            </div>
+
+            <div class="box">
+
+                <h3>EQUIPMENT STATUS</h3>
+
+                <div class="device">
+                    <span>Conveyor Motor</span>
+                    <span class="green">ON</span>
+                </div>
+
+                <div class="device">
+                    <span>Cooling System</span>
+                    <span class="green">ON</span>
+                </div>
+
+                <div class="device">
+                    <span>Compressor</span>
+                    <span class="green">ON</span>
+                </div>
+
+                <div class="device">
+                    <span>Exhaust Fan</span>
+                    <span class="green">ON</span>
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <h3>DATA ACQUISITION</h3>
+
+                <p>Auto Refresh: Every 5 Seconds</p>
+                <br>
+                <p>Source: Arduino IoT System</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+/* CHART */
+
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+    type: 'line',
+
+    data: {
+        labels: ['1','2','3','4','5','6'],
+
+        datasets: [
+
+            {
+                label: 'Temperature',
+                data: [25,26,27,28,29,30],
+                borderWidth: 2
+            },
+
+            {
+                label: 'Humidity',
+                data: [40,42,43,44,45,46],
+                borderWidth: 2
+            },
+
+            {
+                label: 'Pressure',
+                data: [980,985,990,992,995,998],
+                borderWidth: 2
+            }
+
+        ]
+    },
+
+    options: {
+        responsive:true
+    }
+
+});
+
+/* RANDOM LIVE VALUES */
+
+setInterval(() => {
+
+    document.getElementById("temp").innerHTML =
+        (25 + Math.random()*5).toFixed(1) + "°C";
+
+    document.getElementById("humidity").innerHTML =
+        (45 + Math.random()*10).toFixed(1) + "%";
+
+    document.getElementById("pressure").innerHTML =
+        (990 + Math.random()*10).toFixed(0) + " hPa";
+
+}, 5000);
+
+</script>
+
+</body>
+</html>
