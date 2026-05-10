@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./projectbanner.png" width="100%">
+  <img src="./Project banner.png" width="100%">
 </p>
 <h1 align="center">🏭 Industrial Condition Monitoring System</h1>
 
